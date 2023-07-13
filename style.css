@@ -165,9 +165,9 @@ nav button {
     color: #fff;
     
 }
-.label:after{
+.label::after{
     content: '+';
-    font-size: 34px;
+    font-size: 33px;
     position: absolute;
     right: 20px;
 }
@@ -185,4 +185,16 @@ input[type="radio"]{
 {
     max-height: 600px;
     padding:30px;
+}
+.accordin input[type="radio"]:checked + label ::after
+{
+  transform: rotate(135deg);
+}
+.faq .email-signup{
+  max-width:600px;
+  margin: 20px auto 60px;
+}
+.faq small{
+  font-size: 21px;
+  color: #fff;
 }
