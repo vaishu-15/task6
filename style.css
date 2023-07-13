@@ -134,8 +134,9 @@ nav button {
     font-size: 18px;
 }
 .faq h2{
-    font-weight: 500;
+    font-weight: 900;
     font-size: 40px;
+    color: #fff;
 }
 .accordin{
  margin:60px auto;
@@ -183,5 +184,5 @@ input[type="radio"]{
 .accordin input[type="radio"]:checked + label + .content
 {
     max-height: 600px;
-    padding: px;
+    padding:30px;
 }
