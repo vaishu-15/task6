@@ -170,3 +170,18 @@ nav button {
     position: absolute;
     right: 20px;
 }
+input[type="radio"]{
+    display:none;
+}
+.accordin .content{
+    background:#303030 ;
+    text-align: left ;
+    padding: 0 20px;
+    max-height:0 ;
+    overflow: hidden;
+}
+.accordin input[type="radio"]:checked + label + .content
+{
+    max-height: 600px;
+    padding: px;
+}
