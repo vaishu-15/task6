@@ -163,7 +163,6 @@ nav button {
 }
 .content p{
     color: #fff;
-    
 }
 .label::after{
     content: '+';
@@ -200,4 +199,23 @@ input[type="radio"]{
 }
 .footer{
   padding: 50px 15% 10px;
+  border-top: 6px solid #333;
+  color: #777;
+}
+.footer h2{
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.footer .col{
+  flex-basis: 25%;
+  flex-grow: 1;
+  margin-bottom: 10px;
+}
+.footer .col a{
+  display: block;
+  text-decoration: none;
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 10px;
 }
