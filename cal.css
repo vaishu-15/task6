@@ -12,3 +12,89 @@ body{
    min-height: 100vh;
    background: rgb(175, 229, 175);
 }
+.wrapper{
+    width:450px;
+    background: white;
+    border-radius: 10px;
+}
+.wrapper header{
+    display: flex;
+    align-items: center;
+    padding: 25px 30px 10px;
+    justify-content: space-between;
+}
+header .current-date{
+  font-size: 1.45rem;
+  font-weight: 600;
+}
+header .icons span{
+    height: 28px;
+    width: 28px;
+    margin: 0 1px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 28px;
+    border-radius: 9px;
+    background: burlywood;
+}
+header .icons span:hover{
+    background:rgb(163, 146, 146);
+}
+header .icons span:last-child{
+    margin-right: -10px;
+}
+.calender{
+    padding:20px;
+}
+.calender ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+
+}
+.calender .weeks li{
+    font-weight: 500;
+}
+.calender .days li{
+    z-index: 1;
+    cursor: pointer;
+    margin-top: 30px;
+}
+.calender ul li{
+    position:sticky;
+    width:calc(100%/7);
+}
+.calender .days li::before{
+   position: absolute;
+   content: '';
+   height: 40px;
+   z-index: -1;
+   transform: translate(-50%,-50%);
+}
+.days li.inactive{
+    color: #dfd3d3;
+}
+.days li:hover::before{
+    background:rgb(204, 170, 236);
+}
+.days li.active{
+    color: rgb(218, 14, 14);
+    position: relative;
+}
+.events{
+    width:30%;
+    height: 20%;
+    background: beige;
+    margin-left: 40px;
+    border-radius: 4px;
+    padding: 10px;
+}
+.events p{
+    color: rgb(168, 117, 190);
+    padding-left: 6px;
+}
+.days li.latest{
+    color: black ;
+    background-color: rgb(120, 147, 147); 
+}
+ 
